@@ -1,0 +1,8 @@
+尼康 Z9 · UNSTOPPABLE 黄黑旗舰概念
+双击 Nikon-Z9.html，用 Chrome 或 Edge 打开。无需安装、联网或 API Key。
+拖动旋转，滚轮缩放，点击部件展开；E 全部拆解，R 复位，A 自动旋转，L 标注，X 结构扫描。
+点击播放产品演绎可观看 20 秒本地 3D 序列，Esc 可停止。不是原厂视频。
+右上角可切换实体视图和结构扫描，半透明外壳与线框由模型实时渲染。
+模型由代码生成，外观与内部排列为示意，不是官方精确模型或维修资料。镜头为通用示意造型。
+产品规格来源：https://onlinemanual.nikonimglib.com/z9/en/specifications_348.html
+Three.js 0.180.0 使用 MIT 许可证，随包保留。
