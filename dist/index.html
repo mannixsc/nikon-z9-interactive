@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="以程序化三维模型探索 尼康 Z9 的部件、结构和拆解动画。独立交互演示，非官方拆机资料。">
+  <title>Nikon Z9 · UNSTOPPABLE — 黄黑旗舰概念</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <a class="brand" href="./index.html" aria-label="Nikon Lab 首页"><span class="nikon-badge">Nikon</span><span>Z SYSTEM<small>FLAGSHIP MIRRORLESS</small></span></a>
+      <nav class="campaign-nav" aria-label="页面导航"><a href="#experience">探索 Z9</a><a href="#innovation">突破内核</a><a href="https://www.youtube.com/watch?v=4MR5p-dH2uc" target="_blank" rel="noopener noreferrer">官方发布影片 ↗</a></nav>
+      <button class="subtle" id="help-button" aria-label="打开操作指南">操作指南 <span class="key">?</span></button>
+    </header>
+    <section class="heading-row">
+      <div class="hero-title"><div class="eyebrow"><span class="era-mark">NIKON Z 9</span> THE MIRRORLESS FLAGSHIP</div><h1>UNSTOPPABLE<span>.</span><span class="sr-only"> Nikon Z9</span></h1><p>为突破而生。<strong>让每一个瞬间，无可阻挡。</strong></p><div class="hero-tags"><span>无机械快门设计</span><span>堆栈式 CMOS</span><span>EXPEED 7</span></div></div>
+      <div class="hero-metrics"><div><span class="metric-kicker">RESOLUTION</span><strong>45.7<small>MP</small></strong><span>全画幅堆栈式 CMOS</span></div><div><span class="metric-kicker">RAW BURST</span><strong>20<small>FPS</small></strong><span>全分辨率 RAW · 最高约</span></div><div><span class="metric-kicker">INTERNAL RAW</span><strong>8.3<small>K</small></strong><span>N-RAW / 60p · 固件 2.0 起</span></div></div>
+    </section>
+    <section class="experience-bar" id="experience"><div><span class="chapter-number">01</span><h2>近观旗舰<span>EXPLORE THE UNSTOPPABLE</span></h2></div><button id="film-tour" aria-pressed="false"><span class="play-glyph">▶</span><span id="film-tour-text">播放产品演绎</span><small>20 SEC / LIVE 3D</small></button></section>
+    <main class="workspace">
+      <aside class="parts-panel panel">
+        <div class="panel-header"><h2>系统架构 <span>ARCHITECTURE</span></h2><span class="count">12</span></div>
+        <button class="overview active" id="overview" aria-pressed="true"><span class="overview-icon">◎</span><span>整机概览<small>PRODUCT OVERVIEW</small></span><span class="small-dot"></span></button>
+        <div id="part-list" class="part-list" aria-label="选择并拆解部件"></div>
+        <div class="list-footer"><span><i></i> <span id="split-count">0 / 12</span> 已展开</span><span>点击探索 ↗</span></div>
+      </aside>
+      <section class="stage" aria-label="可旋转缩放的三维相机模型">
+        <div class="stage-wordmark" aria-hidden="true">Z<span>9</span></div><div class="scan-grid" aria-hidden="true"></div><div class="scan-sweep" aria-hidden="true"></div><div class="yellow-light" aria-hidden="true"></div>
+        <div id="viewport" tabindex="0" role="application" aria-label="三维相机：拖动旋转，滚轮缩放，点击部件拆解。也可使用左侧部件目录。"></div>
+        <div class="stage-top"><span class="live"><i></i> INTERACTIVE PRODUCT EXPERIENCE</span><span class="stage-tech">Z9 / NIKON Z SYSTEM</span></div>
+        <div class="mode-label" id="mode-label">整机视图 <span>ASSEMBLED</span></div>
+        <div class="stage-modes" aria-label="渲染模式"><button class="active" id="solid-mode" aria-pressed="true">实体视图</button><button id="scan-mode" aria-pressed="false">结构扫描 <span>⌁</span></button></div>
+        <div class="hud-axis" aria-hidden="true"><span>Y</span><i></i><span>X</span><span>Z</span></div>
+        <div class="hud-readout" aria-hidden="true"><span>OPTICAL SYSTEM</span><strong>FX / Z MOUNT</strong><i></i><span id="scan-readout">SURFACE RENDERING</span></div>
+        <div class="annotation-layer" id="annotations" aria-hidden="true"></div>
+        <div class="tour-overlay" id="tour-overlay" hidden><span id="tour-chapter">01 / FORM</span><strong id="tour-caption">旗舰，自有锋芒。</strong><div class="tour-track"><i id="tour-progress"></i></div><button id="stop-tour">结束演绎 ×</button></div>
+        <div class="stage-hint" id="stage-hint"><span>↻</span> 拖动旋转 <b>·</b> 滚轮缩放 <b>·</b> 点击部件拆解</div>
+        <div class="stage-bottom"><span id="camera-readout">PERSPECTIVE / LIVE</span><span>MODEL 01 <i></i></span></div>
+        <div class="loading" id="loading"><div class="loader"></div><strong>正在构建三维场景</strong><span>让结构，触手可及。</span></div>
+        <div id="render-error" hidden><strong>当前浏览器无法启动三维渲染</strong><p>请用启用硬件加速的 Chrome 或 Edge 打开此页面。</p></div>
+      </section>
+      <aside class="detail-panel panel">
+        <div class="panel-header"><h2>结构档案 <span>DETAILS</span></h2><span class="crosshair">⌖</span></div>
+        <div class="detail-body" aria-live="polite">
+          <span class="detail-index" id="detail-index">00 / OVERVIEW</span>
+          <h3 id="detail-title">突破，始于内核。</h3><p class="detail-en" id="detail-en">BEYOND THE DECISIVE MOMENT</p>
+          <div class="detail-rule"></div>
+          <p class="detail-description" id="detail-description">从镜头到机身，逐层探索一台旗舰全画幅相机的结构。点击任意部件，让隐藏的细节呈现在眼前。</p>
+          <dl class="detail-facts" id="detail-facts"></dl>
+          <div class="part-action" id="part-action" hidden><button class="outline" id="toggle-part">展开此部件 ↗</button></div>
+          <div class="signal-diagram" aria-hidden="true"><span>LIGHT</span><i></i><span>CMOS</span><i></i><span>EXPEED 7</span></div>
+          <div class="mini-diagram"><svg viewBox="0 0 230 90" fill="none" aria-hidden="true"><path d="M29 32 82 9l119 27-52 30Z M29 32v25l120 28 52-24V36 M149 66v19" stroke="currentColor"/><path d="M48 37 82 22l88 20-33 15Z" stroke="currentColor" stroke-dasharray="3 4"/><circle cx="157" cy="43" r="12" stroke="currentColor"/><path d="M19 74h95 M178 11v13 M171 18h14" stroke="currentColor" opacity=".4"/></svg><span>PRECISION WITHOUT LIMITS</span></div>
+          <p class="model-note">模型与内部排列为交互示意，不代表真实拆机结构、尺寸或维修方法。</p>
+        </div>
+      </aside>
+    </main>
+    <section class="controls-section" aria-label="模型控制">
+      <div class="controls"><button class="primary" id="explode-all"><svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="m2 7 8-5 8 5-8 5Z M2 11l8 5 8-5 M2 15l8 5 8-5" stroke="currentColor"/></svg><span>全部拆解</span></button><div class="separator"></div><button id="reset-view"><span class="control-icon">↺</span>复位视角</button><button id="auto-rotate" aria-pressed="false"><span class="control-icon">↻</span>自动旋转</button><button id="labels-toggle" aria-pressed="false"><span class="control-icon">⊹</span>部件标注</button><button id="focus-mode" aria-pressed="false"><span class="control-icon">⛶</span>专注模式</button></div>
+      <div class="slider-row"><label for="explode-range">拆解进度</label><input type="range" min="0" max="100" value="0" id="explode-range" aria-label="拆解进度"><output id="explode-output" for="explode-range">0%</output></div>
+    </section>
+    <section class="innovation" id="innovation"><div class="innovation-title"><span class="chapter-number">02 / BEYOND LIMITS</span><h2>改变规则的力量。<br><em>藏于每一处精密。</em></h2><p>从光进入镜头，到影像被记录。选择一个内核，继续深入探索。</p></div><div class="innovation-links"><button data-explore="4"><span>01 / VISION</span><strong>看见，毫不妥协。</strong><small>45.7 MP 全画幅堆栈式 CMOS</small><b>↗</b></button><button data-explore="5"><span>02 / POWER</span><strong>速度，自内而生。</strong><small>EXPEED 7 影像处理引擎</small><b>↗</b></button><button data-explore="0"><span>03 / PRECISION</span><strong>为每一次出发而造。</strong><small>一体式竖拍握柄 · 镁合金机身</small><b>↗</b></button></div></section>
+    <footer><span>NIKON Z 9<span class="footer-line"></span><span>UNSTOPPABLE.</span></span><span>黄黑旗舰概念 <span class="footer-slash">/</span> 独立制作 · 非尼康官方页面</span><div class="reference-links"><a href="https://www.nikonusa.com/p/z-9/1669/overview" target="_blank" rel="noopener noreferrer">官网视觉参考 ↗</a><a href="https://www.youtube.com/watch?v=4MR5p-dH2uc" target="_blank" rel="noopener noreferrer">官方影片参考 ↗</a></div></footer>
+  </div>
+  <dialog id="help-dialog"><button class="dialog-close" id="close-help" aria-label="关闭操作指南">×</button><div class="eyebrow">QUICK START</div><h2>换个角度，看见更多。</h2><p>鼠标拖动旋转，滚轮缩放；触屏单指旋转、双指缩放。</p><ul><li>点击模型或左侧目录，选择并展开一个部件。</li><li>再次点击同一部件，收回或重新展开。</li><li>使用「全部拆解」和进度滑块控制整机展开。</li><li>切换「结构扫描」，查看半透明外壳与内部几何线框。</li><li>键盘：<kbd>E</kbd> 拆解 / 收回，<kbd>R</kbd> 复位，<kbd>A</kbd> 旋转，<kbd>L</kbd> 标注，<kbd>X</kbd> 扫描，<kbd>Esc</kbd> 退出专注。</li></ul><p class="help-note">这是代码构建的外观与结构示意模型，不可作为维修或真实拆机依据。</p><button class="primary" id="start-exploring">开始探索 ↗</button></dialog>
+  <script src="./bundle.js"></script>
+</body>
+</html>
