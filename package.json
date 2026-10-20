@@ -1,0 +1,1 @@
+{"name":"nikon-z9-explorer","version":"1.0.0","private":true,"type":"module","scripts":{"build":"esbuild src/app.js --bundle --minify --format=iife --outfile=dist/bundle.js --legal-comments=eof","start":"node server.cjs"},"devDependencies":{"esbuild":"0.25.10"}}

@@ -1,0 +1,8 @@
+node_modules/
+.tools/
+.openai/
+.env
+.env.*
+*.tar.gz
+qa-*.png
+dist/qa-preview.html
