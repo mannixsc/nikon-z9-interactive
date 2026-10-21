@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#080808">
   <meta name="description" content="以程序化三维模型探索 尼康 Z9 的部件、结构和拆解动画。独立交互演示，非官方拆机资料。">
-  <title>Nikon Z9 · UNSTOPPABLE — 黄黑旗舰概念</title>
+  <title>Nikon Z9 · UNSTOPPABLE — 外观精修版 · 24–70/2.8 S</title>
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -30,15 +30,15 @@
       <section class="stage" aria-label="可旋转缩放的三维相机模型">
         <div class="stage-wordmark" aria-hidden="true">Z<span>9</span></div><div class="scan-grid" aria-hidden="true"></div><div class="scan-sweep" aria-hidden="true"></div><div class="yellow-light" aria-hidden="true"></div>
         <div id="viewport" tabindex="0" role="application" aria-label="三维相机：拖动旋转，滚轮缩放，点击部件拆解。也可使用左侧部件目录。"></div>
-        <div class="stage-top"><span class="live"><i></i> INTERACTIVE PRODUCT EXPERIENCE</span><span class="stage-tech">Z9 / NIKON Z SYSTEM</span></div>
+        <div class="stage-top"><span class="live"><i></i> INTERACTIVE PRODUCT EXPERIENCE</span><span class="stage-tech">Z9 + 24–70mm f/2.8 S</span></div>
         <div class="mode-label" id="mode-label">整机视图 <span>ASSEMBLED</span></div>
         <div class="stage-modes" aria-label="渲染模式"><button class="active" id="solid-mode" aria-pressed="true">实体视图</button><button id="scan-mode" aria-pressed="false">结构扫描 <span>⌁</span></button></div>
         <div class="hud-axis" aria-hidden="true"><span>Y</span><i></i><span>X</span><span>Z</span></div>
         <div class="hud-readout" aria-hidden="true"><span>OPTICAL SYSTEM</span><strong>FX / Z MOUNT</strong><i></i><span id="scan-readout">SURFACE RENDERING</span></div>
         <div class="annotation-layer" id="annotations" aria-hidden="true"></div>
         <div class="tour-overlay" id="tour-overlay" hidden><span id="tour-chapter">01 / FORM</span><strong id="tour-caption">旗舰，自有锋芒。</strong><div class="tour-track"><i id="tour-progress"></i></div><button id="stop-tour">结束演绎 ×</button></div>
-        <div class="stage-hint" id="stage-hint"><span>↻</span> 拖动旋转 <b>·</b> 滚轮缩放 <b>·</b> 点击部件拆解</div>
-        <div class="stage-bottom"><span id="camera-readout">PERSPECTIVE / LIVE</span><span>MODEL 01 <i></i></span></div>
+        <div class="view-presets" aria-label="外观检查视角"><span>外观检查</span><button data-view="hero" aria-pressed="true">三分之四</button><button data-view="front" aria-pressed="false">正面</button><button data-view="rear" aria-pressed="false">背面</button><button data-view="top" aria-pressed="false">顶部</button></div><div class="stage-hint" id="stage-hint"><span>↻</span> 拖动旋转 <b>·</b> 滚轮缩放 <b>·</b> 点击部件拆解</div>
+        <div class="stage-bottom"><span id="camera-readout">PERSPECTIVE / LIVE</span><span>EXTERIOR STUDY / V2 <i></i></span></div>
         <div class="loading" id="loading"><div class="loader"></div><strong>正在构建三维场景</strong><span>让结构，触手可及。</span></div>
         <div id="render-error" hidden><strong>当前浏览器无法启动三维渲染</strong><p>请用启用硬件加速的 Chrome 或 Edge 打开此页面。</p></div>
       </section>
@@ -53,7 +53,7 @@
           <div class="part-action" id="part-action" hidden><button class="outline" id="toggle-part">展开此部件 ↗</button></div>
           <div class="signal-diagram" aria-hidden="true"><span>LIGHT</span><i></i><span>CMOS</span><i></i><span>EXPEED 7</span></div>
           <div class="mini-diagram"><svg viewBox="0 0 230 90" fill="none" aria-hidden="true"><path d="M29 32 82 9l119 27-52 30Z M29 32v25l120 28 52-24V36 M149 66v19" stroke="currentColor"/><path d="M48 37 82 22l88 20-33 15Z" stroke="currentColor" stroke-dasharray="3 4"/><circle cx="157" cy="43" r="12" stroke="currentColor"/><path d="M19 74h95 M178 11v13 M171 18h14" stroke="currentColor" opacity=".4"/></svg><span>PRECISION WITHOUT LIMITS</span></div>
-          <p class="model-note">模型与内部排列为交互示意，不代表真实拆机结构、尺寸或维修方法。</p>
+          <p class="model-note">外观参照尼康官方部件图与产品照片。整体比例采用公开尺寸；曲面与小零件未实测，内部排列为讲解示意。非原厂 CAD 或维修模型。</p>
         </div>
       </aside>
     </main>
